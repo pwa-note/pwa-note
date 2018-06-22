@@ -1,0 +1,38 @@
+{
+  "name": "pwa-note",
+  "version": "1.0.0",
+  "description": "pwa-note",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "f2e start",
+    "build": "rm -rf output && git clone https://github.com/pwa-note/pwa-note.github.io output && f2e build",
+    "deploy": "cd output && git add . && git commit -m 'auto deploy' && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwa-note/pwa-note.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwa-note/pwa-note/issues"
+  },
+  "homepage": "https://github.com/pwa-note/pwa-note#readme",
+  "devDependencies": {
+    "f2e-middle-rollup": "^0.3.3",
+    "f2e-server": "^2.9.7",
+    "rollup": "^0.60.7",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-typescript2": "^0.15.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "dexie": "^2.0.4",
+    "ipreact": "^0.1.8",
+    "preact": "^8.2.9"
+  }
+}

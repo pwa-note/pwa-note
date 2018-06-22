@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "module": "esnext",
+        "jsx": "react",
+        "jsxFactory": "h",
+        "sourceMap": true,
+        "target": "es2015"
+    },
+    "include": [
+        "src/**.ts",
+        "src/**.tsx"
+    ]
+}

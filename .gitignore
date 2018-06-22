@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+node_modules
+output
+dist
+.rpt2_cache

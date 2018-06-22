@@ -1,0 +1,12 @@
+{
+    "short_name": "PNote",
+    "name": "PWA NOTE",
+    "icon": [
+        {
+            "src": "img/icon_48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        }
+    ],
+    "start_url": "/"
+}

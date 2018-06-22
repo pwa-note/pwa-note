@@ -1,0 +1,41 @@
+body,html {
+    overflow: hidden;
+}
+#app {
+    margin: 0 auto;
+    max-width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    > .inner {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300%;
+        height: 100%;
+        transition: all .3s ease-in;
+        transform: translateX(-33.33%);
+        &.is-status-add {
+            transform: translateX(0);
+        }
+        &.is-status-focus {
+            transform: translateX(-66.66%);
+        }
+        > .panel {
+            width: 33.33%;
+            float: left;
+        }
+    }
+    .panel-heading {
+        height: 50px;
+    }
+    .panel-block {
+        height: ~"calc(100vh - 50px)";
+        display: block;
+        overflow-y: auto;
+    }
+    form {
+        display: block;
+        width: 100%;
+    }
+}
